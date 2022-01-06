@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Test</h1>
+
+
+<script>
+const Todo = [
+		{id:1,todo:"eat"},
+		{id:2,todo:"drink"},
+		{id:3,todo:"sleep"},
+
+]
+/*
+const newTodo= Todo.filter((item)=>{
+		return item.id != 3;
+});
+
+console.log(newTodo);*/
+
+
+const removeTodo = (idss)=>{
+
+			const newTod= Todo.filter((item)=>item.id != idss)
+			console.log(newTod)
+		
+}
+
+removeTodo(1);
+
+
+</script>
+</body>
+</html>
+Project - Ib-phase-2-poc (Freight Tiger)
+1.	Vue Routing
+2.	Components
+3.	Communication between Components ( Parent to child component )
+4.	Axios Library to make HTTP calls
+5.	Bootstrap CSS Framework
+6.	Store - auth for login credentials
+
+Prerequisites
+
+Install NodeJS
+
+Refer https://nodejs.org/en/ to install NodeJS
+
+Install Vue Cli
+
+Install Vue Cli Node Package Globally using the following Command.
+
+npm install -g @vue/cli
+
+Cloning and Running the Application
+
+Clone the application to local
+
+Go into the project Folder and install the npm packages using the following command
+
+npm install
+
+Run the following command to run the application
+
+npm run serve
+
+The Application runs on localhost:8080
+ 
+Application Design
+
+Views and components
+
+Demand List : This View Displays a list of demand and gets the data from a json from api
+
+List Supplier: This View Displays the Details supplier and gets the data from a json from api
+
+Payment : This View Displays the Details of Trip Type in two phase , you have to select any phase to get full details
+
+Http Library
+axios library is used to make http calls
+
+Routing
+The Application has 3 endpoints
+
+/demand/list : it shows the list of demand
+
+/supplier/list : it shows the list of supplier
+
+/supplier/payments : it shows the supplier payment details based upon trip
+
+References
+
+VueJS : https://vuejs.org/v2/guide/ vue cli : https://cli.vuejs.org/guide/
+axios : https://www.npmjs.com/package/axios vue bootstrap : https://bootstrap-vue.js.org/docs 
+
